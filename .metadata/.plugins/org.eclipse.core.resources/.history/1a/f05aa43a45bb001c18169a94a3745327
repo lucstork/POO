@@ -1,0 +1,46 @@
+package Seção4_14;
+
+import javax.swing.JOptionPane;
+
+public class Casa{
+	String cor;
+	Porta p1 = new Porta();
+	Porta p2 = new Porta();
+	Porta p3 = new Porta();
+	boolean abrePorta;
+	
+	void pintaCasa(String s) {
+		this.cor = s;
+	}
+	
+	void abreP1(){
+		abrePorta = true;
+		JOptionPane.showMessageDialog(null, "Abrindo a porta 1...");
+	}
+	
+	void abreP2(){
+		abrePorta = true;
+		JOptionPane.showMessageDialog(null, "Abrindo a porta 2...");
+	}
+	
+	void abreP3(){
+		abrePorta = true;
+		JOptionPane.showMessageDialog(null, "Abrindo a porta 3...");
+	}
+	
+	
+	
+	
+	int quantasPortasEstaoAbertas(){
+		int i = 0;
+		if(p1.aberta == true){
+			i += 1;
+		}if(p2.aberta == true){
+			i += 1;
+		}if(p3.aberta == true){
+			i += 1;
+		}
+		return i;
+	}
+
+}

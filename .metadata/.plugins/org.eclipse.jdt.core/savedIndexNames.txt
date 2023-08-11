@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Cópia_PC_Antigo\Desktop\Luciano Stork II\MATERIAS EM ANDAMENTO\PROG. ORIENT. A OBJ\.metadata\.plugins\org.eclipse.jdt.core
+665054158.index
+2006819101.index
+1865797976.index

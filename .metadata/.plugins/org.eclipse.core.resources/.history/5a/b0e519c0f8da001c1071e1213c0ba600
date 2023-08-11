@@ -1,0 +1,14 @@
+package APIsTelas;
+
+import javax.swing.*;
+public class Aplicativo extends JFrame{
+	public Aplicativo(){
+		getContentPane().setLayout(null);
+		setBounds(500,250,100,300);
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	public static void main(String args[]){
+		Aplicativo window = new Aplicativo();
+	}
+}

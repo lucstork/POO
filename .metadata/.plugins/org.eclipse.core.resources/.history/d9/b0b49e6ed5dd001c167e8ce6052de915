@@ -1,0 +1,46 @@
+package TestesProgramas;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class MudaCor extends JDialog{
+	JButton jbtAzul, jbtAmarelo, jbtFechar;
+	PrincipalCor pc;
+	public MudaCor(PrincipalCor pc){
+		this.pc = pc;
+		getContentPane().setLayout(null);
+		setTitle("Cor atual: " + pc.getCor());
+		Handler obj = new Handler();
+		jbtAzul = new JButton("Azul");
+		jbtAzul.setBounds(10,10,100,30);
+		jbtAzul.addActionListener(obj);
+		add(jbtAzul);
+		jbtAmarelo = new JButton("Amarelo");
+		jbtAmarelo.setBounds(130,10,100,30);
+		jbtAmarelo.addActionListener(obj);
+		add(jbtAmarelo);
+		jbtFechar = new JButton("Fechar");
+		jbtFechar.setBounds(70,60,100,30);
+		jbtFechar.addActionListener(obj);
+		add(jbtFechar);
+		setBounds(150,200,255,150);
+		setVisible(false);
+		setModal(true);
+	}
+	public class Handler implements ActionListener{
+		public void actionPerformed(ActionEvent e){
+			if(e.getSource() == jbtAzul){
+				pc.mudaCor("Azul");
+			}
+			if(e.getSource() == jbtAmarelo){
+				pc.mudaCor("Amarelo");
+			}
+			if(e.getSource() == jbtFechar){
+				pc.showPrincipal();
+				//setVisible(false);
+			}
+			setTitle("Cor atual: " + pc.getCor());
+		}
+	}
+}

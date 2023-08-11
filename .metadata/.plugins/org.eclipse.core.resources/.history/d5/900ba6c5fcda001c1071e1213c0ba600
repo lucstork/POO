@@ -1,0 +1,22 @@
+package APIsTelas;
+
+import javax.swing.*;
+
+public class ComFigura extends JFrame {
+	Icon fig;
+	JLabel lbl;
+	public ComFigura(){
+		getContentPane().setLayout(null);
+		fig = new ImageIcon("figura.png");
+		lbl = new JLabel();
+		lbl.setIcon(fig);
+		lbl.setBounds(10,10,200,200);
+		add(lbl);
+		setSize(240,260);
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	public static void main (String args[]){
+		ComFigura aplicacao = new ComFigura();
+	}
+}

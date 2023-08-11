@@ -1,0 +1,16 @@
+package Seção4_14;
+
+import javax.swing.JOptionPane;
+
+public class Programa03 {
+	public static void main(String[] args) {
+		String corCasa;
+		
+		Casa casa = new Casa();
+		
+		
+		corCasa = JOptionPane.showInputDialog(null, "Qual a cor da casa?");
+		casa.pintaCasa(corCasa);
+		
+	}
+}

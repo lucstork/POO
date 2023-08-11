@@ -1,0 +1,8 @@
+Mês: Janeiro
+Data de Início: 01/01/2022
+Data de Fechamento: 31/01/2022
+Saldo Inicial: R$1000.0
+Gastos: R$250.0
+Saldo Restante: R$750.0
+
+

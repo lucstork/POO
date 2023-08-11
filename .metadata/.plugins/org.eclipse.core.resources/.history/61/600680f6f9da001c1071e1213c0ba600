@@ -1,0 +1,25 @@
+package APIsTelas;
+
+import javax.swing.*;
+import java.awt.*;
+public class ContainerAplicativo extends JFrame{
+	JButton botao; //variavel para um botão
+	JTextField caixatexto; //variavel para uma caixa de texto
+	public ContainerAplicativo(){
+		getContentPane().setLayout(null); //configura o Container
+		botao = new JButton(); // criação do objeto
+		botao.setText("Pronto"); // configuração do objeto
+		botao.setBounds(95,75,80,30);
+		add(botao); //adicionando o objeto ao container
+		caixatexto = new JTextField(); // criação do objeto
+		caixatexto.setText("Digite aqui: "); // configuração do objeto
+		caixatexto.setBounds(65,75,150,30);
+		add(caixatexto); //adicionando o objeto ao container
+		setBounds(500,250,300,200);
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	public static void main(String args[]){
+		ContainerAplicativo janela = new ContainerAplicativo();
+	}
+}
